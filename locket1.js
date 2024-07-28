@@ -18,14 +18,14 @@ let jsonToUpdate = {
         "request_date": "2005-11-11T01:01:01Z",
         "subscriber": {
             "entitlement": {},
-            "first_seen": "2005-11-11T01:01:01Z",
+            "first_seen": "2005-1-11T01:01:01Z",
             "original_application_version": "9692",
-            "last_seen": "2005-11-11T01:01:01Z",
+            "last_seen": "2005-1-11T01:01:01Z",
             "other_purchases": {},
             "management_url": null,
             "subscriptions": {},
             "entitlements": {},
-            "original_purchase_date": "2005-11-11T01:01:01Z",
+            "original_purchase_date": "2005-1-11T01:01:01Z",
             "original_app_user_id": "70B24288-83C4-4035-B001-573285B21AE2",
             "non_subscriptions": {}
         }
@@ -40,9 +40,9 @@ for (const [entitlementId, productInfo] of Object.entries(productEntitlementMapp
 
   for (const entitlement of entitlements) {
     jsonToUpdate.subscriber.entitlements[entitlement] = {
-      "purchase_date": "2005-11-11T01:01:01Z",
+      "purchase_date": "2005-1-11T01:01:01Z",
       "original_purchase_date": "2005-1-11T01:01:01Z",
-      "expires_date": "9692-01-01T01:01:01Z",
+      "expires_date": "9692-01-1T01:01:01Z",
       "is_sandbox" : false,
       "ownership_type": "PURCHASED",
       "store": "app_store",
@@ -52,8 +52,8 @@ for (const [entitlementId, productInfo] of Object.entries(productEntitlementMapp
     // Add product identifier to subscriptions
     jsonToUpdate.subscriber.subscriptions[productIdentifier] = {
       "expires_date": "9692-01-01T01:01:01Z",
-      "original_purchase_date": "2005-01-01T01:01:01Z",
-      "purchase_date": "2005-11-11T01:01:01Z",
+      "original_purchase_date": "2005-01-11T01:01:01Z",
+      "purchase_date": "2005-1-11T01:01:01Z",
       "is_sandbox" : false,
       "ownership_type": "PURCHASED",
       "store": "app_store"
